@@ -121,7 +121,7 @@ USE_TZ = True
 
 STATICSFILES_DIRS =os.path.join(BASE_DIR, 'static')
 STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static_cdn','staticfiles_build','static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_cdn','static')
 
 GOOGLE_API_KEY = ""
 RECAPTCHA_KEY = ""
