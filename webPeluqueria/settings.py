@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'core',
     'contact',
     'services.apps.ServicesConfig',
-    '"fontawesome_free"',
     'store.apps.StoreConfig',
 ]
 
