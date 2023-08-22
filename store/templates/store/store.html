@@ -1,0 +1,22 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+
+{% block content%}
+<section class="page-section pt-2">
+    {% for product in products %}
+    <div class=" justify-content-center  d-flex flex-wrap">
+        <div class="card m-5 b-2 bg-dark text-light d-flex " style="width: 16rem;">
+            <img src="{{product.image.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">{{product.description}}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item text">Stock</li>
+            </ul>
+        </div>
+        {% endfor %}
+
+
+</section>
+{% endblock %}

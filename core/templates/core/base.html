@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+{% load static %}
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="{% static 'core/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{% static 'core/css/styles.css' %}">
+
+  <!-- FontAWesome -->
+  <link href="{% static 'core/vendor/fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
+
+
+  <title>Peluqueria</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navegation navbar navbar-expand-lg bg-body-tertiary navbar-dark fixed-top">
+    <div class="container-fluid ">
+      <a class="navbar-brand {% if request.path == '/' %}active{% endif %}" href="{% url 'home' %}">
+        Peluqueria Marlene
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav  mx-auto">
+          <li class="nav-item">
+            <a class="nav-link {% if request.path == '/' %}active{% endif %}" href={% url 'home' %}>INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if request.path == '/history/' %}active{% endif %}"
+              href="{% url 'history' %}">HISTORIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if request.path == '/services/'%}active{% endif %}"
+              href="{% url 'services' %}">SERVICIOS</a>
+          </li>
+          <li>
+            <a class="nav-link {% if request.path == '/store/'%}active{% endif %}"
+              href="{% url 'store' %}">PRODUCTOS</a>
+          </li>
+          <li>
+            <a class="nav-link {% if request.path == '/contact/'%}active{% endif %}"
+              href="{% url 'contact' %}">CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Contenido -->
+  {% block content %}{% endblock %}
+
+  <!-- Pié de página -->
+
+  <footer>
+    <div class="footer-content">
+      <h3> Marlene Peluquería </h3>
+      <p>Sed pulvinar blandit elit id venenatis. Ut eget lacus neque. Nullam justo quam, efficitur nec turpis vitae,
+        efficitur posuere lig</p>
+      <ul class="socials p-0">
+        <li><a href="https://instagram.com/peluqueriamarlene?igshid=MzRlODBiNWFlZA==" target="_blank"><i
+              class="fa-brands fa-instagram"></i></a> </li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p class="m-0">copyright © 2023 designed by <span>Miguel Angel Neumann</span></p>
+      <ul class="socials p-0 m-0">
+        <li><a href="https://www.linkedin.com/in/miguel-angel-neumann-a45639229/" target="_blank"><i
+              class="fa-brands fa-linkedin"></i></a> </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="{% static 'core/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'core/js/app.js' %}"></script>
+</body>
+
+
+</html>

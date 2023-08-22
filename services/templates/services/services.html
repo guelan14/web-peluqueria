@@ -1,0 +1,31 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+{% block content %}
+<section class="page-section ">
+  <div class="pt-4">
+  {% for service in services %}
+  <div class="container pb-5">
+    <div class="row">
+      <div class=" col-sm-4">
+        <img class="img-fluid rounded shadow-image "  src="{{service.image.url}}" >
+      </div>
+      <div class="col-sm-8  mx-auto">
+        <div>
+          <span class="section-heading-upper">{{service.subtitle}}</span>
+          <span class="section-heading-lower">{{service.title}}</span>
+        </div>
+        <div class="section-content"> <!-- MEJORAR -->
+          <p> {{service.content}} </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endfor %}
+</div>
+</section>
+
+<script src="{% static 'core/js/app.js' %}"></script>
+
+{% endblock %}
