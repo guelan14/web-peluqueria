@@ -78,10 +78,14 @@ WSGI_APPLICATION = 'webPeluqueria.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': BASE_DIR / 'db.sqlite3',
-#    }
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'AxaKonqeVOf4zB4PaLnZ',
+        'HOST': 'containers-us-west-142.railway.app',
+        'PORT': '6758',
+    }
 }
 
 
@@ -119,9 +123,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
-
 STATICSFILES_DIRS =os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
