@@ -125,7 +125,7 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 STATICSFILES_DIRS =os.path.join(BASE_DIR, 'static')
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 
 GOOGLE_API_KEY = ""
 RECAPTCHA_KEY = ""
@@ -137,6 +137,6 @@ RECAPTCHA_SECRET_KET = ""
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # media config
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media', 'static' )
+MEDIA_URL = 'media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static_cdn', 'media_root', 'media', 'static' )
 
