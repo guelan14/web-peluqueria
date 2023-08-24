@@ -58,7 +58,8 @@
 }
 
 .nav-hiden{
-    transform:translateY(-5rem);
+    transform:translatey(-100%);
+    opacity: 0;
 }
 
 h1{
