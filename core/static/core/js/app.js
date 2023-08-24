@@ -1,4 +1,4 @@
-// NAVBAR
+//  Ocultar NAVBAR
 const nav=document.querySelector(".navegation");
 let lastScrollY=window.scrollY;
 
@@ -12,8 +12,9 @@ window.addEventListener("scroll", ()=> {
   }
 
   lastScrollY=window.scrollY;
-})
+});
 
+//Desplazamiento de entrada
 
 function realizarDesplazamiento() {
   var divLeft = document.getElementById('div-left');
@@ -25,7 +26,7 @@ function realizarDesplazamiento() {
 
   divRight.style.opacity = '1';
   divRight.style.transform = 'translateX(0)';
-}
+};
 
 // Ejecutar la función automáticamente al cargar la página
 window.addEventListener('load', function() {
@@ -33,19 +34,5 @@ window.addEventListener('load', function() {
 });
 
 
-//Scroll Animation
-function fadeInElement(element) {
-  var elementPosition = element.getBoundingClientRect().top;
-  var windowHeight = window.innerHeight;
-
-  if (elementPosition - windowHeight + 50 < 0) {
-    element.classList.add('fade-in');
-  }
-}
-
-var animatedElement = document.querySelector('.scroll-animation');
-window.addEventListener('scroll', function() {
-  fadeInElement(animatedElement);
-});
 
 
