@@ -1,4 +1,4 @@
-//  Ocultar NAVBAR
+//Ocultar nav
 const nav=document.querySelector(".navegation");
 let lastScrollY=window.scrollY;
 
@@ -16,22 +16,28 @@ window.addEventListener("scroll", ()=> {
 
 //Desplazamiento de entrada
 
-function realizarDesplazamiento() {
+function addIntro() {
   var divLeft = document.getElementById('div-left');
-  var divRight = document.getElementById('div-right');
 
   //Aplicar el desplazamiento a ambos divs
   divLeft.style.opacity = '1';
     divLeft.style.transform = 'translateX(0)';
-
-  divRight.style.opacity = '1';
-  divRight.style.transform = 'translateX(0)';
 };
+
+function logoEnter(){
+  var logo=document.getElementById("logo");
+    logo.style.opacity=1;
+  
+};
+
 
 // Ejecutar la función automáticamente al cargar la página
 window.addEventListener('load', function() {
-  realizarDesplazamiento();
+  addIntro();
+  logoEnter();
 });
+
+
 
 
 
