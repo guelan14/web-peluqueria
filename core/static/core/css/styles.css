@@ -19,7 +19,7 @@
 
 
 .page-section {
-    margin-top: 5rem;
+    margin-top: 6rem;
     font-family:'Raleway', sans-serif;
 }
 
@@ -149,21 +149,28 @@ footer{
 }
 
 .fab {
-    padding-left: 0.625rem;
-    font-size: 3.125rem;
-    width: 1.875rem;
-    text-align: center;
-    text-decoration: none;
-    }
+    font-size: 4rem;
+    width: 4rem;
+ }
 
-    
+ .whatsapp-button {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1000;
+  }
+  .whatsapp-button i {
+    font-size: 5rem;
+    color:#000
+  }
+
 .fab:hover {
 opacity: 0.7;
 color:aqua;
 }
 
 .fa-whatsapp {
-color: white;
+color: rgb(112, 196, 97);
 }
 
 .socials{
