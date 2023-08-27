@@ -1,3 +1,7 @@
+.body{
+    text-align: justify;
+}
+
 .navegation{
     padding: 10px;
     background-color:rgb(23, 22, 21) !important;
@@ -8,7 +12,7 @@
     transition: all 600ms ease-in-out;
 }
 
-#logo{
+#title{
     opacity: 0;
     transition: opacity 2s ease-in-out;
 }
@@ -19,6 +23,7 @@
 
 
 .page-section {
+    text-align: justify;
     margin-top: 6rem;
     font-family:'Raleway', sans-serif;
 }
@@ -34,6 +39,7 @@
     display: block;
     font-size: 3rem;
     font-weight: 100;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /*#div-left {
@@ -125,7 +131,6 @@ footer{
 .item{
     padding-bottom:10rem;
     text-align: center;
-    background-color: rgb(236, 236, 236);
     width: 100%;
 }
 

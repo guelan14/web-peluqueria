@@ -5,16 +5,12 @@
 <!-- Cabecera -->
 <section class="page-section">
   <div class="text-center">
-    <h1 class="mx-auto">Marlene Peluquería</h1>
-    <img id="logo" class=" img-fluid mb-3 mb-lg-0 rounded" src=" {% static 'core/img/logo.png' %}" alt="logo">
+    <h1 id="title" class="mx-auto">Marlene Peluquería</h1>
   </div>
   <div class="container pt-5 pb-5 ">
-    <div id="div-left" class="row ">
-      <div class="col-lg-4">
-        <img class=" img-fluid mb-3 mb-lg-0 rounded" src="{% static 'core/img/peluqueramostrandopeinado.png' %}" alt="">
-      </div>
-      <div class="col-lg-6 home-title ">
-        <div class="bg-faded p d-flex mr-auto rounded ">
+    <div class="row ">
+      <div class="col-lg-8 home-title ">
+        <div class="bg-faded p d-flex mr-auto  ">
           <span class="section-heading-lower pb-4">Quienes somos ? </span>
         </div>
         <p> Somos mucho más que tijeras y peines. Somos un equipo apasionado de estilistas que se esfuerzan por realzar
@@ -28,11 +24,14 @@
           es una oportunidad para mimarte, relajarte y salir sintiéndote renovado.
         </p>
       </div>
+      <div class="col-lg-4 home-title">
+        <!--<img id="logo" class=" img-fluid mb-3 mb-lg-0 rounded" src=" {% static 'core/img/logo.png' %}" alt="logo">-->
+      </div>
     </div>
   </div>
   <div class="container pt-5 pb-5 ">
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-lg-8">
         <div class="bg-faded p d-flex mr-auto rounded">
           <span class="section-heading-lower pb-4"> Para quienes? </span>
         </div>
@@ -53,12 +52,33 @@
         </p>
       </div>
       <div class="col-lg-4 home-title">
-        <img class=" img-fluid mb-3 mb-lg-0 rounded " src="{% static 'core/img/services1.png' %}" alt="">
+        <img class=" img-fluid mb-3 mb-lg-0 " style="border-radius: 50%; width: 100%;"
+          src="{% static 'core/img/home2.png' %}" alt="">
       </div>
     </div>
 
   </div>
 
+  <div class="container pt-5 pb-5 " style="background-color: rgb(208, 208, 208);">
+    <div class=" text-center">
+      <div class="bg-faded p d-flex mr-auto rounded ">
+      </div>
+      <span class="section-heading-lower pb-4 ">Donde estamos? </span>
+      <p> Nos encontramos en <span>Alvear 1950, Puerto Rico, Misiones</span>
+      </p>
+      <span class="section-heading-lower pb-4">Horarios </span>
+      <p>De 8:30hs a 12:00hs</p>
+      <p>De 15:30hs a 20:00hs</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.9006778451217!2d-55.02428912362935!3d-26.811290988975458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f8271962f769ad%3A0xf40419d8db595b04!2sAlvear%201950%2C%20Puerto%20Rico%2C%20Misiones!5e0!3m2!1sen!2sar!4v1692897746517!5m2!1sen!2sar"
+        width="100%" height="450" style="border:0;" allowfullscreen="true" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+  </div>
+  <br>
+  <br>
   <div class="item container pb-3">
     <h2 class="p-4 text-dark">Te esperamos</h2>
     <div class="row  alaign-items-center ">
@@ -73,6 +93,7 @@
       </div>
     </div>
   </div>
+  <br>
   <br>
 
 

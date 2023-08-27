@@ -25,16 +25,16 @@ window.addEventListener("scroll", ()=> {
 
 //};
 
-function logoEnter(){
-  var logo=document.getElementById("logo");
-    logo.style.opacity=1;
+function titleEnter(){
+  var title=document.getElementById("title");
+    title.style.opacity=1;
   
 };
 
 
 // Ejecutar la función automáticamente al cargar la página
 window.addEventListener('load', function() {
-  logoEnter();
+  titleEnter();
 });
 
 
