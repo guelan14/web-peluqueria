@@ -1,4 +1,4 @@
-//Ocultar nav
+//Ocultar navbaR
 const nav=document.querySelector(".navegation");
 let lastScrollY=window.scrollY;
 
@@ -15,14 +15,15 @@ window.addEventListener("scroll", ()=> {
 });
 
 //Desplazamiento de entrada
-
-function addIntro() {
-  var divLeft = document.getElementById('div-left');
+//function addIntro() {
+  //var divLeft = document.getElementById('div-left');
+  //var divRight = document.getElementById('div-right');
 
   //Aplicar el desplazamiento a ambos divs
-  divLeft.style.opacity = '1';
-    divLeft.style.transform = 'translateX(0)';
-};
+  //divLeft.style.opacity = '1';
+  //divLeft.style.transform = 'translateX(0)';
+
+//};
 
 function logoEnter(){
   var logo=document.getElementById("logo");
@@ -33,7 +34,6 @@ function logoEnter(){
 
 // Ejecutar la función automáticamente al cargar la página
 window.addEventListener('load', function() {
-  addIntro();
   logoEnter();
 });
 
