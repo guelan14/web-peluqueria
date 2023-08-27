@@ -160,7 +160,7 @@ footer{
 
  .whatsapp-button {
     position: fixed;
-    bottom: 80px;
+    bottom: 40px;
     right: 80px;
     z-index: 1000;
   }
