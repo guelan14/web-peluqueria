@@ -1,5 +1,10 @@
-.body{
-    text-align: left;
+body{
+    padding-bottom: 21rem;
+    padding-top: 6rem;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    min-height: 100vh;
 }
 
 .navegation{
@@ -11,6 +16,42 @@
     position: fixed;
     transition: all 600ms ease-in-out;
 }
+.nav-hiden{
+    transform:translatey(-100%);
+    opacity: 0;
+}
+
+footer{
+    background-color: #111;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 31.25rem;
+    line-height: 1.75rem;
+    font-size: 0.875rem;
+}
+
 
 #title{
     opacity: 0;
@@ -24,7 +65,6 @@
 
 .page-section {
     text-align: justify;
-    margin-top: 6rem;
     font-family:'Raleway', sans-serif;
 }
 
@@ -48,10 +88,7 @@
     transition: opacity 1.5s, transform 2s;
   }*/
 
-.nav-hiden{
-    transform:translatey(-100%);
-    opacity: 0;
-}
+
 
 h1{
     font-family:'Raleway', sans-serif;
@@ -92,33 +129,6 @@ h2{
     background-color: rgb(234, 227, 227) !important;
 }
 
-footer{
-    background-color: #111;
-    font-family: "Open Sans";
-    padding-top: 40px;
-    color: #fff;
-}
-
-.footer-content{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.footer-content h3{
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 3rem;
-}
-
-.footer-content p{
-    max-width: 31.25rem;
-    line-height: 1.75rem;
-    font-size: 0.875rem;
-}
 
 .lista-horarios{
     list-style: none;
