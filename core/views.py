@@ -6,3 +6,10 @@ def home(request):
 
 def history(request):
     return render(request,"core/history.html")
+
+def contact(request):
+    return render(request,"core/contact.html")
+
+def services(request):
+    return render(request,"core/services.html")
+
